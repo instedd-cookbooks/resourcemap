@@ -1,0 +1,8 @@
+production:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: true
+  database: resourcemap
+  pool: 5
+  username: <%= node['resourcemap']['mysql']['username'] %>
+  password: <%= node['resourcemap']['mysql']['password'] %>

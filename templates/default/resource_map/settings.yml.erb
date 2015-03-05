@@ -1,0 +1,7 @@
+---
+mobile_id: <%= node['resourcemap']['mobile_id'] %>
+host: <%= node['resourcemap']['host_name'] %>
+plugins:
+<% node['resourcemap']['plugins'].each do |name, value| %>
+  <%= name %>: <%= value %>
+<% end %>
