@@ -25,7 +25,6 @@ end
 app_dir = "/u/apps/resource_map"
 
 rails_web_app "resource_map" do
-  owner 'ubuntu'
   server_name node['resourcemap']['host_name']
   config_files %w(database.yml guisso.yml settings.yml)
   passenger_spawn_method :conservative
