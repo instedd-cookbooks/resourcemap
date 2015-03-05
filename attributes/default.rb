@@ -18,3 +18,8 @@ default['resourcemap']['plugins']['reminders'] = false
 default['resourcemap']['plugins']['alerts'] = false
 default['resourcemap']['plugins']['fred_api'] = false
 default['resourcemap']['plugins']['csd_api'] = false
+
+default['resourcemap']['poirot']['enabled'] = false
+default['resourcemap']['poirot']['source'] = 'resourcemap'
+default['resourcemap']['poirot']['debug'] = false
+default['resourcemap']['poirot']['server'] = ''
