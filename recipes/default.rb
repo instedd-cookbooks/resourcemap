@@ -28,4 +28,5 @@ rails_web_app "resource_map" do
   server_name node['resourcemap']['host_name']
   config_files %w(database.yml guisso.yml settings.yml poirot.yml)
   passenger_spawn_method :conservative
+  passenger_max_requests node['resourcemap']['passenger']['max_requests']
 end

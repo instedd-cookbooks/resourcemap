@@ -1,4 +1,5 @@
 default['resourcemap']['host_name'] = node['fqdn']
+default['resourcemap']['passenger']['max_requests'] = nil
 
 default['resourcemap']['mysql']['admin_username'] = node['mysql']['admin_username'] || 'root'
 default['resourcemap']['mysql']['admin_password'] = node['mysql']['admin_password'] || node['mysql']['server_root_password']
